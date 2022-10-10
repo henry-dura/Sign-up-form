@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body{
+    background-color:papayawhip;
+}
+
 main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh;   
 }
 
 
@@ -16,14 +23,14 @@ main{
     background-image: url("images/bg-image.jpg");
     background-repeat: repeat;
     width: 80%;
-    height: 95vh;
-    /* opacity: 50%; */
+    height: 80vh;
     display: flex;
     align-items: center;
-    /* gap: 4px; */
-    /* background-size: cover; */
-
+    border-radius: 10px;
+    overflow: hidden;
 }
+
+
 img{
     width: 50%;
     height: 100px;
@@ -31,32 +38,38 @@ img{
 
 .logo-section{
     display: flex;
-    flex-basis: 40%;
-    background-color: bisque;
+    flex-basis: 30%;
+    background-color:#7ED957;
+    color: #319DDD;
     height: max-content;
     justify-content: flex-start;
     align-items: center;
+    font-family: 'Mr Dafoe', cursive;
+    gap: 10px;
+    
 }
 
 .form-section{
-    background-color: whitesmoke;
-    flex-basis: 60%;
+    background-color: #fff;
+    flex-basis: 70%;
     height: 100%;
+    text-align: justify;
 }
+
+
 .form-section h3{
     margin:30px;
-    font-weight: 900;
+    font-size: 2rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .form-col{
     display: flex;
-    /* background-color: blueviolet; */
     gap: 15px;
     height: 40vh;
     padding: 35px;
     margin-top: 20px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .column1{
@@ -70,8 +83,65 @@ input{
     margin-bottom: 25px;
     width: 100%;
     border-radius: 5px;
+    padding: 5px 2px;
+    font-size: 1.3rem;
 }
+
+input:focus{
+    border: 3px solid #319DDD;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
 label{
     display: block;
 }
 
+button{
+    margin: 20px;
+    padding: 8px;
+    font-size: 1.2rem;
+    background-color: #7ED957;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #0e547d;
+
+}
+
+span a{
+    padding: 15px;
+    text-decoration: none;
+}
+p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+footer{
+    position: fixed;
+    bottom: 8px;
+    left:40%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+  .fa{
+    width: min-content;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+.fa-facebook, .fa-linkedin {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }

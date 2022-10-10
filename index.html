@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
     <title>Sign-up Form</title>
 </head>
 <body>
     <main>
         <div class="container">
             <div class="logo-section">
-                <img src="images/car-logo2.png" alt="car logo" >
+                <img src="images/herox.png" alt="car logo" >
                 <h1>HEROX</h1>
             </div>
 
@@ -22,26 +24,32 @@
                     <div class="form-col">
 
                         <div class="column1">
-                            <label for="name">Name:</label><input type="text" name="name" id="name">
-                            <label for="email">Email:</label><input type="email" name="email" id="email">
-                            <label for="pwd">Password:</label><input type="password" name="pwd" id="pwd">
+                            <label for="name">Name:</label><input type="text" name="name" id="name" required>
+                            <label for="email">Email:</label><input type="email" name="email" id="email" required>
+                            <label for="pwd">Password:</label><input type="password" name="pwd" id="pwd" minlength="5" required>
                         </div>
 
                         <div class="column2">
-                            <label for="last-name">Last Name:</label><input type="text" name="last-name" id="last-name">
-                            <label for="phone">Phone:</label><input type="number" name="phone" id="phone">
-                            <label for="confirm-pwd">Confirm Password:</label><input type="password" name="confirm-pwd" id="confirm-pwd">
+                            <label for="last-name">Last Name:</label><input type="text" name="last-name" id="last-name" required>
+                            <label for="phone">Phone:</label><input type="number" name="phone" id="phone" required>
+                            <label for="confirm-pwd">Confirm Password:</label><input type="password" name="confirm-pwd" id="confirm-pwd" required>
                         </div>
 
                     </div>
                     <button type="submit">Create Account</button>
-                    <p>Already have an account?<a href="http://">login</a></p>
+                    <p>Already have an account?<span><a href="http://">log in</a></span></p>
+
+                    <footer>
+                        <p>Contact us: <span><a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a> <a href="#" class="fa fa-linkedin"></a></span></p>
+                        
+                    </footer>
+                
                 </form>
             </div>
         </div>
     </main>
-    <footer></footer>
-
+    
 
     
 </body>
